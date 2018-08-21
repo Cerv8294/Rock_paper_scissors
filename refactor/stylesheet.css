@@ -1,0 +1,48 @@
+body {
+  position: relative;
+  top: 250px;
+  margin: auto 0px;
+  text-align: center;
+  background-color: #EEEEEE;
+
+}
+
+button {
+  box-sizing: content-box;
+  margin: 15px 15px;
+  padding: 0;
+  width: 250px;
+  height: 250px;
+  border: 1px solid #212121;
+  box-shadow: 0px 2px 10px;
+  transition: all .1s ease;
+}
+
+#rock {
+  background-image: url(https://www.rockpaperscissorsentertainment.com/wp-content/uploads/2017/12/Logo.png);
+  background-size: 800px 300px;
+  background-position: 0 0px;
+}
+
+#scissors {
+  background-image: url(https://www.rockpaperscissorsentertainment.com/wp-content/uploads/2017/12/Logo.png);
+  background-size: 800px 300px;
+  background-position: 100% 0px;
+}
+
+#paper {
+  background-image: url(https://www.rockpaperscissorsentertainment.com/wp-content/uploads/2017/12/Logo.png);
+  background-size: 800px 300px;
+  background-position: 50% 0px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 10px;
+}
+
+div {
+  position: relative;
+  font-size: 1.3em;
+  top: 100px;
+}
