@@ -25,9 +25,18 @@
       let compScore = 0;
       let i;
       let scoreCard = document.createElement('div');
+      let compCard = document.createElement('div');
+      let userCard = document.createElement('div');
       scoreCard.classList.add('score');
-      scoreCard.textContent = `User: 0\n Comp: 0`;
+      userCard.classList.add('card', 'usercard');
+      compCard.classList.add('card','compcard');
+      userCard.textContent = `User: 0`;
+      compCard.textContent = `Comp: 0`;
       body.appendChild(scoreCard);
+      scoreCard.appendChild(userCard);
+      scoreCard.appendChild(compCard);
+
+      game();
 
 
       function computerPlay() {
@@ -88,7 +97,8 @@
           button.addEventListener('click', function(e){
           let computerSelect = computerPlay();
           playRound(button.id, computerSelect);
-          scoreCard.textContent = `User: ${userScore}\n Comp: ${compScore}`;
+          userCard.textContent = `User: ${userScore}`;
+          compCard.textContent = `Comp: ${compScore}`;
           if (userScore == 5) {
             alert("You Win!");
             userScore = 0;
@@ -103,7 +113,7 @@
         });
       }
 
-        game();
+
     </script>
 
   </body>
